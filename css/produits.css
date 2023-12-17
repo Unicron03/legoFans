@@ -1,0 +1,402 @@
+@font-face {
+  font-family: ubuntuFont;
+  src: url("../assets/fonts/UbuntuCondensed-Regular.ttf");
+}
+
+@-webkit-keyframes up-in {
+  from {
+    opacity: 0;
+    bottom: 0%;
+  }
+  to {
+    opacity: 1;
+    bottom: 50%;
+  }
+}
+@keyframes up-in {
+  from {
+    opacity: 0;
+    bottom: 0%;
+  }
+  to {
+    opacity: 1;
+    bottom: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #playButtonStarWars, #playButtonMarvel, #playButtonTechnic {
+    display: none;
+  }
+}
+
+.fill {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body,
+html {
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: ubuntuFont, "sans-serif";
+  background: url('../assets/img/Lego_Wall.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+  background-attachment: fixed;
+  /* animation: shake 5s cubic-bezier(.36,.07,.19,.97) both; */
+}
+
+.link {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px white;
+  position: relative;
+  z-index: 0;
+}
+.link::after {
+  position: absolute;
+  z-index: -1;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #343434;
+  transition: all 250ms;
+}
+.link:hover {
+  color: white;
+  text-shadow: 0px 1px 0px black;
+}
+.link:hover::after {
+  height: 105%;
+  width: 105%;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  position: relative;
+}
+.container-main.no-scroll {
+  overflow: hidden;
+}
+
+video {
+  /* position: absolute; */
+  display: block;
+  margin: auto;
+  pointer-events: none;
+}
+
+#cadranProd{
+  width: 500%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.logo {
+  padding-top: 20px;
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+}
+
+.animShake {
+  animation: shake 2s linear infinite;
+}
+@keyframes shake {
+  1%, 4%, 7%, 10%, 13%, 16%, 19%, 22%, 25%, 28%, 31%, 34%, 37%, 40%, 43%, 46%, 49%, 52%, 55%, 58%, 61%, 64%, 67%, 70%, 73%, 76%, 79%, 82%, 85%, 88%, 91%, 94%, 97%, 100% {
+    transform: translate3d(-60px, -40px, 0);
+  }
+  
+  2%, 5%, 8%, 11%, 14%, 17%, 20%, 23%, 26%, 29%, 32%, 35%, 38%, 41%, 44%, 47%, 50%, 53%, 56%, 59%, 62%, 65%, 68%, 71%, 74%, 77%, 80%, 83%, 86%, 89%, 92%, 95%, 98% {
+    transform: translate3d(40px, 60px, 0);
+  }
+
+  3%, 6%, 9%, 12%, 15%, 18%, 21%, 24%, 27%, 30%, 33%, 36%, 39%, 42%, 45%, 48%, 51%, 54%, 57%, 60%, 63%, 66%, 69%, 72%, 75%, 78%, 81%, 84%, 87%, 90%, 93%, 96%, 99% {
+    transform: translate3d(-90px, 20px, 0);
+  }
+}
+
+/* #background4K {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+} */
+
+#playButtonStarWars, #playButtonMarvel, #playButtonTechnic {
+  max-width: 100%;
+  width: 100px;
+  max-height: 100%;
+  height: 100px;
+  background-image: url("../assets/img/play-button.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  /* position: absolute;
+  right: 25%; */
+}
+
+.page {
+  width: 100%;
+  padding: 10px;
+  background: url('../assets/img/bg/lego-wall.jpeg');
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+  background-attachment: fixed;
+  padding-bottom: 100px;
+}
+@media (max-width: 600px) {
+  .page {
+    width: 90%;
+  }
+}
+.grid {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.grid .grid-item {
+  width: 33%;
+  position: relative;
+}
+.grid .grid-item:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+@media (max-width: 600px) {
+  .grid .grid-item {
+    width: 50%;
+  }
+}
+.box {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.box:hover {
+  opacity: 1;
+  transition: all 0.4s ease;
+  transform: scale(105%);
+}
+.box img {
+  width: 100%;
+  transition: transform 0.6s ease;
+}
+.box.selected {
+  opacity: 0;
+}
+.box.on-top {
+  transform: scale(100%) !important;
+  cursor: default;
+  transition: all 0.4s ease;
+  box-shadow: 2px 2px 19px -2px rgba(0, 0, 0, 0.44);
+  position: relative;
+  /* height: auto; */
+  padding-bottom: 280px;
+}
+.box.image-out img {
+  transform: translateY(-100%);
+}
+.content {
+  position: absolute;
+  padding: 20px 40px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.show .content {
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .content {
+    padding: 10px 20px;
+  }
+}
+.scroller {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+.scroller h1 {
+  color: white;
+  width: 100%;
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  -webkit-animation: up-in 1s ease;
+          animation: up-in 1s ease;
+}
+.top-up.ng-hide-add,
+.top-up.ng-hide-remove {
+  transition: 0s ease top;
+}
+.top-up.ng-hide-add-active,
+.top-up.ng-hide-remove-active {
+  transition: 0.6s ease top;
+}
+.top-up.ng-hide-add {
+  top: 0;
+}
+.top-up.ng-hide-add.ng-hide-add-active {
+  top: 100%;
+}
+.top-up.ng-hide-remove {
+  top: 100%;
+}
+.top-up.ng-hide-remove.ng-hide-remove-active {
+  top: 0;
+}
+.fullscreen-background {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  transition: top 0.5s ease;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.fullscreen-background.show {
+  top: 0;
+}
+.close-button {
+  font-family: 'Lobster Two', cursive; 
+  padding-right: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: steelblue;
+  cursor: pointer;
+}
+.close-button i {
+  font-size: 35px;
+}
+.close-button:hover {
+  color: #ddd;
+  text-decoration: underline;
+  text-decoration-thickness: 0.15em;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  left: 10px;
+  right: 10px;
+  transition: .5s ease;
+  opacity: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  bottom: 10px;
+}
+
+/* Ciblez l'overlay de la carte actuellement survolée */
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.vector {
+  position: absolute;
+  top: 325px;
+  right: 125px;
+  width: 250px !important;
+}
+
+.rightArrow {
+  transform: none !important;
+  /* background-image: url("../assets/img/switchPage-button.png");
+  background-size: cover;
+  border: none;
+  cursor: pointer; */
+  position: absolute;
+  height: 10%;
+  width: auto !important;
+  top: 50%;
+  right: 0;
+}
+
+.leftArrow {
+  transform: none !important;
+  /* background-image: url("../assets/img/switchPage-button.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none; */
+  cursor: pointer;
+  position: absolute;
+  height: 10%;
+  width: auto !important;
+  top: 50%;
+  left: 0;
+  transform: scaleX(-1) !important;
+}
+.leftArrow:hover {
+  opacity: 0.8;
+}
+
+.rightArrow{
+  transform: none !important;
+  /* background-image: url("../assets/img/switchPage-button.png");
+  background-size: cover;
+  border: none; */
+  cursor: pointer;
+  position: absolute;
+  height: 10%;
+  width: auto !important;
+  top: 50%;
+  right: 0;
+}
+.rightArrow:hover {
+  opacity: 0.8;
+}

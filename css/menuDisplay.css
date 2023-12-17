@@ -1,0 +1,54 @@
+.iconMenu{
+    background: rgb(255, 0, 0);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
+    border: solid rgba(225, 225, 14, 0.92) 3px;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    z-index: 21;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#lettrelegoM{
+    margin-left: 2px;
+}
+
+.menu{
+    height: 290px;
+    width: 200px;
+    background: rgb(255, 254, 254);
+    display: grid;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    text-align: center;
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 0 0 15px;
+    transition: 1s;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    align-items: center;
+    visibility:hidden;
+}
+
+.menu a{
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.theme:hover{
+    background-color: gray;
+}
+
+#Acceuil{
+    margin-top: 80px;
+}
