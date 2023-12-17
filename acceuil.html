@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/bandeau.css">
+    <link rel="stylesheet" href="css/menuDisplay.css">
+    <link rel="stylesheet" href="css/dialogQuizz.css">
+    <link rel="shortcut icon" href="assets/img/IconLego.gif">
+</head>
+<body>
+    <section id="BarMenu">
+        <div class="iconMenu" onclick="animIconMenu()">
+            <img src="assets/img/accueil/LegoLettreM.jpg" alt="M" height="16px" id="lettrelegoM">
+            <img src="assets/img/accueil/LegoLettreE.jpg" alt="E" height="16px">
+            <img src="assets/img/accueil/LegoLettreN.jpg" alt="N" height="16px">
+            <img src="assets/img/accueil/LegoLettreU.jpg" alt="U" height="16px">
+        </div>
+        <div class="menu">
+            <a href="" class="theme" id="Acceuil"><strong>Accueil</strong></a>
+            <a href="page/history.html" class="theme" id="Notre Histoire"><strong>Notre Histoire</strong></a>
+            <a href="page/produit.html" class="theme" id="produit"><strong>Nos Produits</strong></a>
+            <a href="page/records.html" class="theme" id="Record"><strong>Nos Records</strong></a>
+            <a href="javascript:void(0);" onclick="ouvrirDialog()" class="theme" id="Quiz"><strong>Le Quiz</strong></a>
+    </section>
+
+    <dialog id="quizDialog">
+        <table>
+            <tr>
+              <th>Quizz1</th>
+              <th>Quizz2</th>
+            </tr>
+            <tr>
+              <td><img src="assets/img/bg/review_quizz1.png" title="Quizz sans possibilité ! Niveau : difficile" class="reviewDialog"/></td>
+              <td><img src="assets/img/bg/review_quizz2.png" title="Quizz avec 3 possibilités ! Niveau : normal" class="reviewDialog"/></td>
+            </tr>
+            <tr>
+                <td><a href="page/quizz.html">Aller au Quizz1</a></td>
+                <td><a href="page/quizz2.html">Aller au Quizz2</a></td>
+            </tr>
+        </table>
+        <form method="dialog">
+            <button onclick="fermerDialog()" style="cursor: pointer;">Fermer</button>
+        </form>
+    </dialog>
+
+    <section class="evenementlego">
+        <div id="imgLegoNoel"></div>
+        <div class="launch-time">
+            <div>
+                <p id="jours">00</p>
+                <span class="temps">Jours</span>
+            </div>
+            <div>
+                <p id="heures">00</p>
+                <span >Heures</span>
+            </div>
+            <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+            </div>
+            <div>
+                <p id="secondes">00</p>
+                <span>Secondes</span>
+            </div>
+        </div>
+        <p id="phraseJeuConcours">Essayez de remporter un prix en vous inscrivant à notre jeu-concours.</p>
+        <a href="" id="btnConcour">Participer au concour</a>
+        <div class="BouleNeige">
+            <img src="assets/img/accueil/imgneige.png" id="boule1" alt="neige">
+            <img src="assets/img/accueil/imgneige.png" id="boule2" alt="neige">
+            <img src="assets/img/accueil/imgneige.png" id="boule3" alt="neige">
+            <img src="assets/img/accueil/imgneige.png" id="boule4" alt="neige">
+            <img src="assets/img/accueil/imgneige.png" id="boule5" alt="neige">
+            <img src="assets/img/accueil/imgneige.png" id="boule6" alt="neige">
+            <img src="assets/img/accueil/imgneige.png" id="boule7" alt="neige">
+            <img src="assets/img/accueil/imgneige.png" id="boule8" alt="neige">
+        </div>
+    </section>
+
+    <section class="categorie">
+            <div class="triangleDeco1"></div>
+            <div class="triangleDeco2"></div>
+            <div class="nomCategorie">
+                <div id="nouveau">
+                    <a href="page/nouveauNoel.html" id="lienNouveauphrase">Nouveau</a>
+                    <a href="page/nouveauNoel.html" id="lienNouveau"></a>
+                </div>
+                <div id="noel">
+                    <a href="" id="lienNoelphrase">Noël</a>
+                    <a href="" id="lienNoel"></a>
+                </div>
+                <div id="exclusivite">
+                    <a href="" id="lienExclusivitephrase">Exclusivités</a>
+                    <a href="" id="lienExclusivite"></a>
+                </div>
+            </div>
+    </section>
+
+    <section id="imgDefilante">
+        <div class="swiper">
+        <div class="swiper-wrapper">
+            <a href="" class="swiper-slide swiper-slide--one">
+                <span>Star Wars</span>
+                <div>
+                    <h2>AT-AT</h2>
+                    <p>849,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--two">
+                <span>Star Wars</span>
+                <div>
+                    <h2>Faucon millenium</h2>
+                    <p>169,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--three">
+                <span>Star Wars</span>
+                <div>
+                    <h2>R2-D2</h2>
+                    <p>239,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--four">
+                <span>Star Wars</span>
+                <div>
+                    <h2>Razor Crest</h2>
+                    <p>599,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--five">
+                <span>Star Wars</span>
+                <div>
+                    <h2>Classe Venator</h2>
+                    <p>649,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--six">
+                <span>Marvel</span>
+                <div>
+                    <h2>Tour Avengers</h2>
+                    <p>499,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--seven">
+                <span>Marvel</span>
+                <div>
+                    <h2>Hulkbuster</h2>
+                    <p>549,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--height">
+                <span>Marvel</span>
+                <div>
+                    <h2>Bouclier de Captain America</h2>
+                    <p>209,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--nine">
+                <span>Marvel</span>
+                <div>
+                    <h2>Le Saint des Saints</h2>
+                    <p>249,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--ten">
+                <span>Marvel</span>
+                <div>
+                    <h2>Black Panther</h2>
+                    <p>349,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--eleven">
+                <span>Marvel</span>
+                <div>
+                    <h2>Nano Gant de l'infini</h2>
+                    <p>69,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--twelve">
+                <span>Marvel</span>
+                <div>
+                    <h2>Amazing Spider-Man</h2>
+                    <p>19,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--thirteen">
+                <span>Technic</span>
+                <div>
+                    <h2>Bulldozer</h2>
+                    <p>499,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--fourteen">
+                <span>Technic</span>
+                <div>
+                    <h2>Ferrari Daytona SP3</h2>
+                    <p>449,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--fifteen">
+                <span>Technic</span>
+                <div>
+                    <h2>Lamborghini Sian FKP 37</h2>
+                    <p>449,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--sixteen">
+                <span>Technic</span>
+                <div>
+                    <h2>Grue sur chenilles Liebherr LR 13000</h2>
+                    <p>679,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--seventeen">
+                <span>Technic</span>
+                <div>
+                    <h2>BMW M 1000 RR</h2>
+                    <p>249,99€</p>
+                </div>
+            </a>
+            <a href="" class="swiper-slide swiper-slide--heighteen">
+                <span>Technic</span>
+                <div>
+                    <h2>Peugeot 9X8 24H</h2>
+                    <p>199,99€</p>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <footer id="bandeau">
+        <div class="row container text-align-center mx-auto">
+            <p>
+            &copy; 2023 Projet SAE - Recueil de besoins |
+            <a href="page/contact.html" target="_blank">VANDEPOELE Enzo - MICALLEF John</a>
+            </p>
+            <span class="row">
+                <a href="#" onclick="window.open('https://github.com/Unicron03')" aria-label="Github">
+                    <img src="https://unicron03.github.io/Image/logo_github.png" height ="24" width="24" class="button-icon-footer"/></button>
+                </a>
+                <a href="#" onclick="window.open('https://unicron03.github.io/')" aria-label="WebSite">
+                    <img src="https://unicron03.github.io/Image/EV.jpg" height ="24" width="24" class="button-icon-footer"/></button>
+                </a>
+                <a href="#" onclick="window.open('https://www.instagram.com/unicron_e/')" aria-label="Enzo's Instagram">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height ="24" width="24" class="button-icon-footer"/>
+                </a>|
+                <a href="#" onclick="window.open('https://www.instagram.com/John709803/')" aria-label="John's Instagram">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height ="24" width="24" class="button-icon-footer"/>
+                </a>
+
+                <a href="page/mentions.html" aria-label="John's Instagram" id="mention-area" target="_blank" onmouseover="changeBackground()" onmouseout="resetBackground()">
+                    <img src="https://lesmachinesasous.club/wp-content/uploads/2021/02/Nos-mentions-legales.png" height ="36" width="36" class="button-icon-footer"/> Mentions légales
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+    <script src="scripts/itemProduit.js"></script>
+    <script src="scripts/accueil.js"></script>
+    <script src="scripts/menuDisplay.js"></script>
+    <script src="scripts/bandeau.js"></script>
+    <script src="scripts/dialogQuizz.js"></script>
+</body>
+</html>
