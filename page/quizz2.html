@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Quizz2</title>
+        <link href="../css/quizz2.css" rel="stylesheet">
+        <link href="../css/bandeau.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/menuDisplay.css">
+		<link rel="stylesheet" href="../css/dialogQuizz.css">
+		<link rel="icon" type="image/x-icon" href="../assets/img/IconLego.gif" />
+    </head>
+<body>
+    <section id="BarMenu">
+        <div class="iconMenu" onclick="animIconMenu()">
+            <img src="../assets/img/accueil/LegoLettreM.jpg" alt="M" height="16px" id="lettrelegoM">
+            <img src="../assets/img/accueil/LegoLettreE.jpg" alt="E" height="16px">
+            <img src="../assets/img/accueil/LegoLettreN.jpg" alt="N" height="16px">
+            <img src="../assets/img/accueil/LegoLettreU.jpg" alt="U" height="16px">
+        </div>
+        <div class="menu">
+            <a href="../acceuil.html" class="theme" id="Acceuil"><strong>Accueil</strong></a>
+            <a href="history.html" class="theme" id="Notre Histoire"><strong>Notre Histoire</strong></a>
+            <a href="produit.html" class="theme" id="produit"><strong>Nos Produits</strong></a>
+            <a href="records.html" class="theme" id="Record"><strong>Nos Records</strong></a>
+            <a href="javascript:void(0);" onclick="ouvrirDialog()" class="theme" id="Quiz"><strong>Le Quiz</strong></a>
+    </section>
+
+    <dialog id="quizDialog">
+        <table>
+          <tr>
+            <th>Quizz1</th>
+            <th>Quizz2</th>
+          </tr>
+          <tr>
+            <td><img src="../assets/img/bg/review_quizz1.png" title="Quizz sans possibilité ! Niveau : difficile" class="reviewDialog"/></td>
+            <td><img src="../assets/img/bg/review_quizz2.png" title="Quizz avec 3 possibilités ! Niveau : normal" class="reviewDialog"/></td>
+          </tr>
+          <tr>
+            <td><a href="quizz.html">Aller au Quizz1</a></td>
+            <td><a href="quizz2.html">Aller au Quizz2</a></td>
+          </tr>
+        </table>
+        <form method="dialog">
+          <button onclick="fermerDialog()" style="cursor: pointer;">Fermer</button>
+        </form>
+    </dialog>
+
+    <form name="form1" action="reponse.php" method="GET">
+        <fieldset>
+            <legend>Quizz</legend>
+
+            <!-- Zone pour afficher l'image -->
+            <center><img id="legoImage" src="../assets/quizz/question1.png" alt="Image Lego"></center>
+
+            <input class="input" type="button" value="1953" onclick="updResponse('reponse1')" id="reponse1">
+            <input class="input" type="button" value="2214" onclick="updResponse('reponse2')" id="reponse2">
+            <input class="input" type="button" value="2575" onclick="updResponse('reponse3')" id="reponse3">
+
+            <!-- Boutons -->
+            <br><input type="button" value="Image suivante" onclick="nextImage()" id="imgButton">
+            <input type="button" value="Vérifier" onclick="affVerifButton()" id="verifButton">
+        </fieldset>
+    </form>
+
+    <footer id="bandeau">
+        <div class="row container text-align-center mx-auto">
+            <p>
+            &copy; 2023 Projet SAE - Recueil de besoins |
+            <a href="contact.html" target="_blank">VANDEPOELE Enzo - MICALLEF John</a>
+            </p>
+            <span class="row">
+                <a href="#" onclick="window.open('https://github.com/Unicron03')" aria-label="Github">
+                    <img src="https://unicron03.github.io/Image/logo_github.png" height ="24" width="24" class="button-icon-footer"/></button>
+                </a>
+                <a href="#" onclick="window.open('https://unicron03.github.io/')" aria-label="WebSite">
+                    <img src="https://unicron03.github.io/Image/EV.jpg" height ="24" width="24" class="button-icon-footer"/></button>
+                </a>
+                <a href="#" onclick="window.open('https://www.instagram.com/unicron_e/')" aria-label="Enzo's Instagram">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height ="24" width="24" class="button-icon-footer"/>
+                </a>|
+                <a href="#" onclick="window.open('https://www.instagram.com/John709803/')" aria-label="John's Instagram">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height ="24" width="24" class="button-icon-footer"/>
+                </a>
+
+                <a href="mentions.html" aria-label="John's Instagram" id="mention-area" target="_blank" onmouseover="changeBackground()" onmouseout="resetBackground()">
+                    <img src="https://lesmachinesasous.club/wp-content/uploads/2021/02/Nos-mentions-legales.png" height ="36" width="36" class="button-icon-footer"/> Mentions légales
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="../scripts/menuDisplay.js"></script>
+    <script src="../scripts/quizz2.js"></script>
+    <script src="../scripts/bandeau.js"></script>
+	<script src="../scripts/dialogQuizz.js"></script>
+</body>
+</html>

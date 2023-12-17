@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Histoire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/history.css" rel="stylesheet">
+  <link href="../css/bandeau.css" rel="stylesheet">
+  <link href="../css/menuDisplay.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/dialogQuizz.css">
+  <link rel="icon" type="image/x-icon" href="../assets/img/IconLego.gif" />
+</head>
+
+<body onload="initElement();">
+  <section id="BarMenu">
+    <div class="iconMenu" onclick="animIconMenu()">
+      <img src="../assets/img/accueil/LegoLettreM.jpg" alt="M" height="16px" id="lettrelegoM">
+      <img src="../assets/img/accueil/LegoLettreE.jpg" alt="E" height="16px">
+      <img src="../assets/img/accueil/LegoLettreN.jpg" alt="N" height="16px">
+      <img src="../assets/img/accueil/LegoLettreU.jpg" alt="U" height="16px">
+    </div>
+    <div class="menu">
+      <a href="../acceuil.html" class="theme" id="Acceuil"><strong>Accueil</strong></a>
+      <a href="history.html" class="theme" id="Notre Histoire"><strong>Notre Histoire</strong></a>
+      <a href="produit.html" class="theme" id="produit"><strong>Nos Produits</strong></a>
+      <a href="records.html" class="theme" id="Record"><strong>Nos Records</strong></a>
+      <a href="javascript:void(0);" onclick="ouvrirDialog()" class="theme" id="Quiz"><strong>Le Quiz</strong></a>
+  </section>
+
+  <dialog id="quizDialog">
+    <table>
+      <tr>
+        <th>Quizz1</th>
+        <th>Quizz2</th>
+      </tr>
+      <tr>
+        <td><img src="../assets/img/bg/review_quizz1.png" title="Quizz sans possibilité ! Niveau : difficile" class="reviewDialog"/></td>
+        <td><img src="../assets/img/bg/review_quizz2.png" title="Quizz avec 3 possibilités ! Niveau : normal" class="reviewDialog"/></td>
+      </tr>
+      <tr>
+        <td><a href="quizz.html">Aller au Quizz1</a></td>
+        <td><a href="quizz2.html">Aller au Quizz2</a></td>
+      </tr>
+    </table>
+    <form method="dialog">
+      <button onclick="fermerDialog()" style="cursor: pointer;">Fermer</button>
+    </form>
+  </dialog>
+
+    <div id="book">
+      <div class="page" id="page5">
+        <div class="content" id="contentP5">
+          <h2 class="hide">Conclusion :</h2>
+          <p class="hide">
+            <video width="100%" height="auto" controls id="videoHistory">
+              <source src="../assets/video/legoStory.mp4" type="video/mp4">
+            </video>
+            <li>
+              L'histoire de LEGO est une saga de créativité, d'innovation et de jeu sans limites. À travers ses
+              briques emblématiques, LEGO a construit un monde où l'imagination est le seul guide, offrant à chacun
+              la possibilité de devenir un maître bâtisseur de son propre univers. Plongez-vous dans l'histoire LEGO
+              et découvrez l'extraordinaire aventure qui a commencé avec une simple brique en bois.
+            </li>
+            <br><a href="https://www.lego.com/en-us/history/" target="_blank" id="legoHistoryLink">Credits :
+              Lego.com</a>
+          <div class="nbPage">Page5</div>
+          </p>
+        </div>
+      </div>
+      <div class="page" id="page4">
+        <div class="content" id="contentP4">
+          <h2 class="hide">Influence Culturelle et Éducative :</h2>
+          <p class="hide">
+            <img id="imgContentP4" src="../assets/img/book/kidKind.png" alt="Kids Kind">
+            <li>
+              L'influence culturelle et éducative de LEGO est indéniable. Ces petites briques colorées stimulent
+              l'imagination, favorisent la créativité, et enseignent des concepts importants tels que la résolution
+              de problèmes et la collaboration.
+            </li>
+          <div class="nbPage">Page4</div>
+          </p>
+        </div>
+      </div>
+      <div class="page" id="page3">
+        <div class="content" id="contentP3">
+          <h2 class="hide">La Révolution des Briques en 1958 :</h2>
+          <p class="hide">
+            <img id="imgContentP3" src="../assets/img/book/bricks1958.png" alt="Bricks 1958">
+            <li>
+              En 1958, LEGO introduit un nouveau matériau et un système d'assemblage amélioré, établissant
+              ainsi le modèle emblématique de la brique LEGO que nous connaissons aujourd'hui. Ces briques
+              interconnectables offrent une infinité de possibilités de création.
+            </li>
+          </p>
+          <h2 class="hide">Évolution et Croissance :</h2>
+          <p class="hide">
+            <li>
+              Au fil des années, LEGO continue d'innover, élargissant sa gamme de produits pour inclure des
+              thèmes variés tels que la ville, l'espace, les châteaux, et bien plus encore. Les sets LEGO
+              deviennent des objets de collection appréciés par les enfants et les adultes du monde entier.
+            </li>
+          <div class="nbPage">Page3</div>
+          </p>
+        </div>
+      </div>
+      <div class="page" id="page2">
+        <div class="content" id="contentP2">
+          <h2 class="hide">L'avènement des Briques en Plastique (1949) :</h2>
+          <p class="hide">
+            <img id="imgContentP2" src="../assets/img/book/bricks1949.png" alt="Bricks 1949">
+            <li>
+              Le tournant majeur intervient en 1949, lorsque LEGO lance ses premières briques en plastique.
+              Cette innovation sert de fondement à la construction ludique et ouvre la voie à la conception
+              d'innombrables structures.
+            </li>
+          <div class="nbPage">Page2</div>
+          </p>
+        </div>
+      </div>
+      <div class="page" id="page1">
+        <div class="content" id="contentP1">
+          <center> <u>
+              <h1 class="hide">The Lego History</h1>
+            </u> </center>
+          <p class="hide">
+            <img id="imgContent" src="../assets/img/christiansen.jpg" alt="Ole Kirk Christiansen">
+            <li>L'histoire des Lego commence en 1932, quand un charpentier danois nommé Ole Kirk Christiansen se met à
+              fabriquer des jouets en bois.</li>
+            <br>
+            <li>Il crée la marque Lego en 1934, en associant les mots danois "Bien" et "Jouer".</li>
+            <br>
+            <li>1949, il lance les premières briques en plastique, qui seront améliorées en 1958 avec un nouveau
+              matériau et un nouveau système d'assemblage.</li>
+          <div class="nbPage">Page1</div>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="bandeau">
+      <div class="row container text-align-center mx-auto">
+        <p>
+          &copy; 2023 Projet SAE - Recueil de besoins |
+          <a href="contact.html" target="_blank">VANDEPOELE Enzo - MICALLEF John</a>
+        </p>
+        <span class="row">
+          <a href="#" onclick="window.open('https://github.com/Unicron03')" aria-label="Github">
+            <img src="https://unicron03.github.io/Image/logo_github.png" height="24" width="24"
+              class="button-icon-footer" /></button>
+          </a>
+          <a href="#" onclick="window.open('https://unicron03.github.io/')" aria-label="WebSite">
+            <img src="https://unicron03.github.io/Image/EV.jpg" height="24" width="24"
+              class="button-icon-footer" /></button>
+          </a>
+          <a href="#" onclick="window.open('https://www.instagram.com/unicron_e/')" aria-label="Enzo's Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height="24" width="24"
+              class="button-icon-footer" />
+          </a>|
+          <a href="#" onclick="window.open('https://www.instagram.com/John709803/')" aria-label="John's Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height="24" width="24"
+              class="button-icon-footer" />
+          </a>
+
+          <a href="mentions.html" aria-label="John's Instagram" id="mention-area" target="_blank"
+            onmouseover="changeBackground()" onmouseout="resetBackground()">
+            <img src="https://lesmachinesasous.club/wp-content/uploads/2021/02/Nos-mentions-legales.png" height="36"
+              width="36" class="button-icon-footer" /> Mentions légales
+          </a>
+        </span>
+      </div>
+    </footer>
+
+		<script src="../scripts/menuDisplay.js"></script>
+    <script src="../scripts/history.js"></script>
+    <script src="../scripts/bandeau.js"></script>
+		<script src="../scripts/dialogQuizz.js"></script>
+</body>
+
+</html>

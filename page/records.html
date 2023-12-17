@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta charset="utf-8" />
+        <title>Records</title>
+        
+        <link href="../css/records.css" rel="stylesheet">
+        <link href="../css/bandeau.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/menuDisplay.css">
+		<link rel="stylesheet" href="../css/dialogQuizz.css">
+		<link rel="icon" type="image/x-icon" href="../assets/img/IconLego.gif" />
+	</head>
+	
+	<body>
+        <section id="BarMenu">
+            <div class="iconMenu" onclick="animIconMenu()">
+                <img src="../assets/img/accueil/LegoLettreM.jpg" alt="M" height="16px" id="lettrelegoM">
+                <img src="../assets/img/accueil/LegoLettreE.jpg" alt="E" height="16px">
+                <img src="../assets/img/accueil/LegoLettreN.jpg" alt="N" height="16px">
+                <img src="../assets/img/accueil/LegoLettreU.jpg" alt="U" height="16px">
+            </div>
+            <div class="menu">
+                <a href="../acceuil.html" class="theme" id="Acceuil"><strong>Accueil</strong></a>
+                <a href="history.html" class="theme" id="Notre Histoire"><strong>Notre Histoire</strong></a>
+                <a href="produit.html" class="theme" id="produit"><strong>Nos Produits</strong></a>
+                <a href="records.html" class="theme" id="Record"><strong>Nos Records</strong></a>
+                <a href="javascript:void(0);" onclick="ouvrirDialog()" class="theme" id="Quiz"><strong>Le Quiz</strong></a>
+        </section>
+
+        <dialog id="quizDialog">
+            <table>
+              <tr>
+                <th>Quizz1</th>
+                <th>Quizz2</th>
+              </tr>
+              <tr>
+                <td><img src="../assets/img/bg/review_quizz1.png" title="Quizz sans possibilité ! Niveau : difficile" class="reviewDialog"/></td>
+                <td><img src="../assets/img/bg/review_quizz2.png" title="Quizz avec 3 possibilités ! Niveau : normal" class="reviewDialog"/></td>
+              </tr>
+              <tr>
+                <td><a href="quizz.html">Aller au Quizz1</a></td>
+                <td><a href="quizz2.html">Aller au Quizz2</a></td>
+              </tr>
+            </table>
+            <form method="dialog">
+              <button onclick="fermerDialog()" style="cursor: pointer;">Fermer</button>
+            </form>
+        </dialog>
+			
+        <h1>The LEGO records</h1>
+
+        <div class="ag-format-container">
+            <div class="ag-courses_box">
+                <div class="ag-courses_item" onclick="toggleVisibility(this)">
+                    <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                        Plus grande construction LEGO du monde
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                        <span class="ag-courses-item_date">
+                            La plus grande construction LEGO jamais réalisée était un modèle de la fusée 
+                            Saturn V d'Apollo, mesurant plus de 110 pieds (33,5 mètres) de haut. Elle a 
+                            été exposée à Oslo, en Norvège.
+                        </span>
+                        <br><i class="savoirPlus">Cliquer pour en savoir plus</i>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="ag-courses_item" onclick="toggleVisibility(this)">
+                    <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                        Plus grande collection de LEGO
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                        <span class="ag-courses-item_date">
+                            La plus grande collection individuelle de LEGO appartient à un collectionneur 
+                            américain du nom de Kyle Ugone. En 2022, sa collection comprenait plus de 4 
+                            millions de pièces LEGO.
+                        </span>
+                        <br><i class="savoirPlus">Cliquer pour en savoir plus</i>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="ag-courses_item" onclick="toggleVisibility(this)">
+                    <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                        Plus grande tour LEGO
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                        <span class="ag-courses-item_date">
+                            La plus grande tour LEGO a été construite en 2015 à Milan, en Italie. Elle mesurait
+                            35,05 mètres de hauteur et a été construite avec plus de 550 000 briques LEGO.
+                        </span>
+                        <br><i class="savoirPlus">Cliquer pour en savoir plus</i>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="ag-courses_item" onclick="toggleVisibility(this)">
+                    <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                        Plus grand ensemble LEGO
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                        <span class="ag-courses-item_date">
+                            Le plus grand ensemble LEGO disponible à l'achat est le modèle LEGO Art World Map, 
+                            qui contient plus de 11 000 pièces.
+                        </span>
+                        <br><i class="savoirPlus">Cliquer pour en savoir plus</i>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="ag-courses_item" onclick="toggleVisibility(this)">
+                    <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                        Plus grand parc à thème LEGO
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                        <span class="ag-courses-item_date">
+                            Le plus grand parc à thème LEGO est LEGOLAND Billund au Danemark, le premier
+                            parc LEGOLAND qui a ouvert en 1968.
+                        </span>
+                        <br><i class="savoirPlus">Cliquer pour en savoir plus</i>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="ag-courses_item" onclick="toggleVisibility(this)">
+                    <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                        Plus grand modèle LEGO Star Wars
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                        <span class="ag-courses-item_date">
+                            Le plus grand modèle LEGO Star Wars est le Faucon Millenium, avec plus de 7 500 pièces.
+                        </span>
+                        <br><i class="savoirPlus">Cliquer pour en savoir plus</i>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="ag-courses_item" onclick="toggleVisibility(this)">
+                    <a href="#" class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                        Plus grand ensemble LEGO Ideas
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                        <span class="ag-courses-item_date">
+                            Le plus grand ensemble LEGO Ideas est le set "World Map," avec 11 695 pièces.
+                        </span>
+                        <br><i class="savoirPlus">Cliquer pour en savoir plus</i>
+                    </div>
+                    </a>
+                </div>
+
+                <a href="records.html"> <img class="cancelArrow" src="../assets/img/logo/cancelArrow.png" alt="cancelArrow" height="48" width="48"/> </a>
+            </div>
+        </div>
+
+        <footer id="bandeau">
+            <div class="row container text-align-center mx-auto">
+                <p>
+                &copy; 2023 Projet SAE - Recueil de besoins |
+                <a href="contact.html" target="_blank">VANDEPOELE Enzo - MICALLEF John</a>
+                </p>
+                <span class="row">
+                    <a href="#" onclick="window.open('https://github.com/Unicron03')" aria-label="Github">
+                        <img src="https://unicron03.github.io/Image/logo_github.png" height ="24" width="24" class="button-icon-footer"/>
+                    </a>
+                    <a href="#" onclick="window.open('https://unicron03.github.io/')" aria-label="WebSite">
+                        <img src="https://unicron03.github.io/Image/EV.jpg" height ="24" width="24" class="button-icon-footer"/>
+                    </a>
+                    <a href="#" onclick="window.open('https://www.instagram.com/unicron_e/')" aria-label="Enzo's Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height ="24" width="24" class="button-icon-footer"/>
+                    </a>|
+                    <a href="#" onclick="window.open('https://www.instagram.com/John709803/')" aria-label="John's Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height ="24" width="24" class="button-icon-footer"/>
+                    </a>
+    
+                    <a href="mentions.html" aria-label="John's Instagram" id="mention-area" target="_blank" onmouseover="changeBackground()" onmouseout="resetBackground()">
+                        <img src="https://lesmachinesasous.club/wp-content/uploads/2021/02/Nos-mentions-legales.png" height ="36" width="36" class="button-icon-footer"/> Mentions légales
+                    </a>
+                </span>
+            </div>
+        </footer>
+
+        <script src="../scripts/menuDisplay.js"></script>
+        <script src="../scripts/records.js"></script>
+        <script src="../scripts/bandeau.js"></script>
+        <script src="../scripts/dialogQuizz.js"></script>
+	</body>
+</html>
