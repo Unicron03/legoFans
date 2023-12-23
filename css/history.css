@@ -7,16 +7,17 @@ body {
 	background: url('../assets/img/bg/lego-wall.jpeg');
 	/* background-repeat: no-repeat; */
 	background-size: 100%;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
   font-family: ubuntuFont, "sans-serif";
   font-size: large;
 }
 
 @media screen and ((max-height: 650px) or (max-width: 900px)) {
   #book {
-    scale: 0.75;
-    top: calc(50%*0.75) !important;
-    transform: translate(calc(-50% * 1.25), -50%) !important
+    scale: 0.5;
+    top: calc(50%*0.5) !important;
+    left: calc(50%*0.45) !important;
+    transform: translate(calc(-50%), -50%) !important;
     /* display: none; */
   }
 }
