@@ -104,9 +104,12 @@ html {
 }
 
 video {
-  /* position: absolute; */
+  position: absolute;
   display: block;
-  margin: auto;
+  margin: 0;
+  right: 50%;
+  transform: translateX(50%);
+  max-width: 875px;
   pointer-events: none;
 }
 
@@ -143,12 +146,6 @@ img.logo {
     transform: translate3d(-90px, 20px, 0);
   }
 }
-
-/* #background4K {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-} */
 
 #playButtonStarWars, #playButtonMarvel, #playButtonTechnic {
   max-width: 100%;
