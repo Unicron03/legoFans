@@ -29,7 +29,11 @@ function movePageLeft() {
     setTimeout(function() {contentP1.classList.add("contentTrans");}, 500);
     setTimeout(function() {img.classList.add("imgActive");}, 500);
     // imgP2.classList.remove("imgActive");
-    book.style.left = "calc(50% + 220px)";
+    if (window.innerWidth > 900) {
+      book.style.left = "calc(50% + 220px)";
+    } else {
+      book.style.left = "calc(50%*0.75 + 220px)";
+    }
     positionP1 = "left";
     canFlip = false;
   }

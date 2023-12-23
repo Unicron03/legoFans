@@ -14,7 +14,9 @@ body {
 
 @media screen and ((max-height: 650px) or (max-width: 900px)) {
   #book {
-    display: none;
+    scale: 0.75;
+    top: calc(50%*0.75) !important;
+    /* display: none; */
   }
 }
 @media screen and (max-height: 785px) {
