@@ -16,6 +16,7 @@ body {
   #book {
     scale: 0.75;
     top: calc(50%*0.75) !important;
+    transform: translate(calc(-50% * 1.25), -50%) !important
     /* display: none; */
   }
 }
