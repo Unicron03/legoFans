@@ -7,7 +7,7 @@ body {
 	background: url('../assets/img/bg/lego-wall.jpeg');
 	background-size: 100%;
 	background-attachment: fixed;
-    width: fit-content;
+    /* width: fit-content; */
     font-family: ubuntuFont, "sans-serif";
 }
 
@@ -29,7 +29,7 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 50px 0;
-    max-width: 80%;
+    max-width: 75%;
 }
 .ag-courses_item {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
@@ -126,41 +126,6 @@ body {
     background-color: #4c49ea;
 }
 
-@media only screen and (max-width: 979px) {
-    .ag-courses_item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
-    }
-    .ag-courses-item_title {
-    font-size: 24px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .ag-format-container {
-    width: 96%;
-    }
-
-}
-@media only screen and (max-width: 639px) {
-    .ag-courses_item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    }
-    .ag-courses-item_title {
-    min-height: 72px;
-    line-height: 1;
-
-    font-size: 24px;
-    }
-    .ag-courses-item_link {
-    padding: 22px 40px;
-    }
-    .ag-courses-item_date-box {
-    font-size: 16px;
-    }
-}
-
 h1 {
     text-align: center;
     text-shadow: 4px 3px 0px #ffadad, 9px 8px 0px rgba(0,0,0,0.15);
@@ -190,4 +155,15 @@ h1 {
 @keyframes rotate {
     0% { transform: rotateZ(0deg) }
     100% { transform: rotateZ(-360deg) }
+}
+
+@media screen and (max-width: 800px) {
+    /* content for mobile */
+    body {
+        background-color: #3ecd5e;
+    }
+    .ag-courses_box {
+        background-color: #3ecd5e;
+        display: list-item;
+    }
 }
