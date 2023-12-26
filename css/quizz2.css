@@ -16,12 +16,14 @@ fieldset {
     border: 2px solid #333;
     padding: 10px;
     margin-bottom: 20px;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: max-content;
+    transform: translate(-50%, -30%);
+    width: 80%;
+    max-width: max-content;
+    min-width: 250px;
     /* max-width: 500px;
     min-width: -webkit-fill-available; */
 }
@@ -75,16 +77,13 @@ input {
     border-radius: 10px;
 }
 
-@media screen and (max-height: 800px) {
+/* mobile screen */
+@media (max-width: 800px) {
     fieldset {
-      top: 220px;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
-}
-@media screen and (max-height: 520px) {
-    #bandeau {
-      display: none;
-    }
-    fieldset {
-      top: 50%;
+    #legoImage {
+        max-height: 375px;
     }
 }
