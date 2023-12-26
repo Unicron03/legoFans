@@ -16,7 +16,7 @@ function toggleVisibility(clickedItem) {
     savoirPlusElement.style.display = 'none';
 
     document.querySelector('.cancelArrow').style.display = 'block';
-    document.querySelector('.cancelArrow').style.position = 'absolute';
-    document.querySelector('.cancelArrow').style.left = '67%';
-    document.querySelector('.cancelArrow').style.top = '18%';
+    // document.querySelector('.cancelArrow').style.position = 'absolute';
+    // document.querySelector('.cancelArrow').style.left = '67%';
+    // document.querySelector('.cancelArrow').style.top = '18%';
 }
