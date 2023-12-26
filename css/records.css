@@ -12,21 +12,24 @@ body {
 }
 
 .ag-format-container {
-    width: 1142px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .ag-courses_box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start;
+    align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
     padding: 50px 0;
+    max-width: 80%;
 }
 .ag-courses_item {
     -ms-flex-preferred-size: calc(33.33333% - 30px);

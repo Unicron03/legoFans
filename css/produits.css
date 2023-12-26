@@ -170,11 +170,11 @@ img.logo {
   background-attachment: fixed;
   padding-bottom: 100px;
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .page {
     width: 90%;
   }
-}
+} */
 .grid {
   padding-top: 20px;
   display: flex;
