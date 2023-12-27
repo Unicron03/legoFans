@@ -111,6 +111,7 @@ video {
   transform: translateX(50%);
   max-width: 875px;
   pointer-events: none;
+  width: 100%;
 }
 
 #cadranProd{
@@ -348,32 +349,17 @@ img.logo {
   position: absolute;
   top: 325px;
   right: 125px;
-  width: 250px !important;
-}
-
-.rightArrow {
-  transform: none !important;
-  /* background-image: url("../assets/img/switchPage-button.png");
-  background-size: cover;
-  border: none;
-  cursor: pointer; */
-  position: absolute;
-  height: 10%;
-  width: auto !important;
-  top: 50%;
-  right: 0;
+  width: 100%;
+  max-width: 250px !important;
 }
 
 .leftArrow {
   transform: none !important;
-  /* background-image: url("../assets/img/switchPage-button.png");
-  background-size: cover;
-  background-color: transparent;
-  border: none; */
   cursor: pointer;
   position: absolute;
-  height: 10%;
+  max-width: 10%;
   width: auto !important;
+  height: auto;
   top: 50%;
   left: 0;
   transform: scaleX(-1) !important;
@@ -389,11 +375,25 @@ img.logo {
   border: none; */
   cursor: pointer;
   position: absolute;
-  height: 10%;
+  max-width: 10%;
   width: auto !important;
+  height: auto;
   top: 50%;
   right: 0;
 }
 .rightArrow:hover {
   opacity: 0.8;
+}
+
+/* mobile screen */
+@media (max-width: 800px) {
+  .vector {
+    position: relative;
+    top: 255px;
+    right: 5px;
+    /* width: 150px !important; */
+  }
+  .leftArrow, .rightArrow {
+    max-width: 15%;
+  }
 }
