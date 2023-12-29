@@ -17,6 +17,7 @@ body:not(.bandeau) {
 .image {
     height: 250px;
     width: auto;
+    cursor: pointer;
 }
 .image:hover {
     scale: 1.25;
