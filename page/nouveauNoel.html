@@ -4,35 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nouveau / Noel / Exclusivités</title>
-    <link rel="stylesheet" href="css/styleNouveauNoel.css">
+    <title>Nouveautés / Noël / Exclusivités</title>
+    <link rel="stylesheet" href="../css/styleNouveauNoel.css">
+    <link rel="stylesheet" href="../css/menuDisplay.css">
+    <link rel="stylesheet" href="../css/bandeau.css">
+    <link rel="stylesheet" href="../css/dialogQuizz.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/IconLego.gif" />
 </head>
 <body>
     <section id="BarMenu">
         <div class="iconMenu" onclick="animIconMenu()">
-            <img src="./autreImage/LegoLettreM.jpg" alt="M" height="16px" id="lettrelegoM">
-            <img src="./autreImage/LegoLettreE.jpg" alt="E" height="16px">
-            <img src="./autreImage/LegoLettreN.jpg" alt="N" height="16px">
-            <img src="./autreImage/LegoLettreU.jpg" alt="U" height="16px">
+            <img src="../assets/img/accueil/LegoLettreM.jpg" alt="M" height="16px" id="lettrelegoM">
+            <img src="../assets/img/accueil/LegoLettreE.jpg" alt="E" height="16px">
+            <img src="../assets/img/accueil/LegoLettreN.jpg" alt="N" height="16px">
+            <img src="../assets/img/accueil/LegoLettreU.jpg" alt="U" height="16px">
         </div>
         <div class="menu">
-            <a href="" class="theme" id="Acceuil"><strong>Accueil</strong></a>
-            <a href="" class="theme" id="Notre Histoire"><strong>Notre Histoire</strong></a>
-            <a href="" class="theme" id="produit"><strong>Nos Produits</strong></a>
-            <a href="" class="theme" id="Record"><strong>Nos Records</strong></a>
-            <a href="" class="theme" id="Quiz"><strong>Le Quiz</strong></a>
+            <a href="../index.html" class="theme" id="Acceuil"><strong>Accueil</strong></a>
+            <a href="history.html" class="theme" id="Notre Histoire"><strong>Notre Histoire</strong></a>
+            <a href="produit.html" class="theme" id="produit"><strong>Nos Produits</strong></a>
+            <a href="records.html" class="theme" id="Record"><strong>Nos Records</strong></a>
+            <a href="javascript:void(0);" onclick="ouvrirDialog()" class="theme" id="Quiz"><strong>Le Quiz</strong></a>
     </section>
 
-    <section class="categorie" id="nouveau">
-
+    <section class="categorie" id="Nouveautées">
+        <h3 id="h31">Nouveautées</h3>
+        <div class="photosLego">
+            <div class="containerLego">
+                <img class="image" src="../assets/img/nouveauteNoel/imglegoDuneNouveaute.png" alt="">
+                <p>Lego Dune Atreides Royal Ornithopter : 164,99€</p>
+            </div>
+            <div class="containerLego">
+                <img class="image" src="../assets/img/nouveauteNoel/imglegoHobbitNouveaute.jpg" alt="">
+                <p>Lego Le Seigneur des anneaux Fondcombe : 499,99€</p>
+            </div>
+            <div class="containerLego">
+                <img class="image" src="../assets/img/nouveauteNoel/imglegoHarryPotterNouveaute.jpg" alt="">
+                <p>Lego La banque des sorciers Gringotts : 429,99€</p>
+            </div>
+        </div>
     </section>
+
     <section class="categorie" id="Noel">
-
+        <h3 id="h32">Noël</h3>
+        <div class="photosLego">
+            <div class="containerLego">
+                <img class="image" src="../assets/img/nouveauteNoel/imglegoNoel1Noel.png" alt="">
+                <p>Lego L'atelier du Père Noel : 373,75€</p>
+            </div>
+            <div class="containerLego">
+                <img class="image" src="../assets/img/nouveauteNoel/imglegoNoel3Noel.png" alt="">
+                <p>Lego Magasin de Jouets de Noël : 280,00€</p>
+            </div>
+            <div class="containerLego">
+                <img class="image" src="../assets/img/nouveauteNoel/imglegoNoel2Noel.png" alt="">
+                <p>Lego Winter Village Fire Station : 129,99€</p>
+            </div>
+        </div>
     </section>
+
     <section class="categorie" id="Exclusivites">
-
+        <h3 id="h33">Exclusivitées</h3>
+        <div class="photosLego">
+            <div class="containerLego">
+                <img class="image" src="../assets/img/nouveauteNoel/imglegoPacManExclusif.png" alt="">
+                <p>Lego Pac-Man : 269,99€</p>
+            </div>
+            <div class="containerLego">
+                <img class="image" src="../assets/img/nouveauteNoel/imglegoEiffelExclusif.png" alt="">
+                <p>Lego Tour Eiffel : 629,99€</p>
+            </div>
+            <div class="containerLego">
+                <img class="image" src="../assets/img/nouveauteNoel/imglegoTitanicExclusif.png" alt="">
+                <p>Lego Titanic : 679,99€</p>
+            </div>
+        </div>
     </section>
+
+    <footer id="bandeau">
+        <div class="row container text-align-center mx-auto">
+            <p>
+            &copy; 2023 Projet SAE - Recueil de besoins |
+            <a href="contact.html" target="_blank">VANDEPOELE Enzo - MICALLEF John</a>
+            </p>
+            <span class="row">
+                <a href="#" onclick="window.open('https://github.com/Unicron03')" aria-label="Github">
+                    <img src="https://unicron03.github.io/Image/logo_github.png" height ="24" width="24" class="button-icon-footer"/></button>
+                </a>
+                <a href="#" onclick="window.open('https://unicron03.github.io/')" aria-label="WebSite">
+                    <img src="https://unicron03.github.io/Image/EV.jpg" height ="24" width="24" class="button-icon-footer"/></button>
+                </a>
+                <a href="#" onclick="window.open('https://www.instagram.com/unicron_e/')" aria-label="Enzo's Instagram">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height ="24" width="24" class="button-icon-footer"/>
+                </a>|
+                <a href="#" onclick="window.open('https://www.instagram.com/John709803/')" aria-label="John's Instagram">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670125.png" height ="24" width="24" class="button-icon-footer"/>
+                </a>
+
+                <a href="mentions.html" aria-label="John's Instagram" id="mention-area" target="_blank" onmouseover="changeBackground()" onmouseout="resetBackground()">
+                    <img src="https://lesmachinesasous.club/wp-content/uploads/2021/02/Nos-mentions-legales.png" height ="36" width="36" class="button-icon-footer"/> Mentions légales
+                </a>
+            </span>
+        </div>
+    </footer>
     
-    <script src="./index.js"></script>
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/menuDisplay.js"></script>
+    <script src="../scripts/bandeau.js"></script>
+	<script src="../scripts/dialogQuizz.js"></script>
 </body>
 </html>
