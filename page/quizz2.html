@@ -46,22 +46,20 @@
         </form>
     </dialog>
 
-    <form name="form1" action="reponse.php" method="GET">
-        <fieldset>
-            <legend>Quizz</legend>
+    <fieldset>
+        <legend>Quizz</legend>
 
-            <!-- Zone pour afficher l'image -->
-            <center><img id="legoImage" src="../assets/quizz/question1.png" alt="Image Lego"></center>
+        <!-- Zone pour afficher l'image -->
+        <center><img id="legoImage" src="../assets/quizz/question1.png" alt="Image Lego"></center>
 
-            <input class="input" type="button" value="1953" onclick="updResponse('reponse1')" id="reponse1">
-            <input class="input" type="button" value="2214" onclick="updResponse('reponse2')" id="reponse2">
-            <input class="input" type="button" value="2575" onclick="updResponse('reponse3')" id="reponse3">
+        <input class="input" type="button" value="1953" onclick="updResponse('reponse1')" id="reponse1">
+        <input class="input" type="button" value="2214" onclick="updResponse('reponse2')" id="reponse2">
+        <input class="input" type="button" value="2575" onclick="updResponse('reponse3')" id="reponse3">
 
-            <!-- Boutons -->
-            <br><input type="button" value="Image suivante" onclick="nextImage()" id="imgButton">
-            <input type="button" value="Vérifier" onclick="affVerifButton()" id="verifButton">
-        </fieldset>
-    </form>
+        <!-- Boutons -->
+        <br><input type="button" value="Image suivante" onclick="nextImage()" id="imgButton">
+        <input type="button" value="Vérifier" onclick="affVerifButton()" id="verifButton">
+    </fieldset>
 
     <footer id="bandeau">
         <div class="row container text-align-center mx-auto">

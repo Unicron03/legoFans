@@ -46,24 +46,22 @@
         </form>
     </dialog>
 
-    <form name="form1" action="reponse.php" method="GET">
-        <fieldset>
-            <legend>Quizz</legend>
+    <fieldset>
+        <legend>Quizz</legend>
 
-            <!-- Zone pour afficher l'image -->
-            <center><img id="legoImage" src="../assets/quizz/question1.png" alt="Image Lego"></center>
+        <!-- Zone pour afficher l'image -->
+        <center><img id="legoImage" src="../assets/quizz/question1.png" alt="Image Lego"></center>
 
-            <!-- Zone pour entrer la réponse -->
-            <label for="userAnswer">Nombre de pièces :</label>
-            <input type="number" id="userAnswer" name="userAnswer">
+        <!-- Zone pour entrer la réponse -->
+        <label for="userAnswer">Nombre de pièces :</label>
+        <input type="number" id="userAnswer" name="userAnswer">
 
-            <!-- Boutons -->
-            <input type="button" value="Image suivante" onclick="nextImage()" id="imgButton">
+        <!-- Boutons -->
+        <input type="button" value="Image suivante" onclick="nextImage()" id="imgButton">
 
-            <br><input type="reset" value="Réinitialiser">
-            <input type="button" value="Vérifier" onclick="affVerifButton()" id="verifButton">
-        </fieldset>
-    </form>
+        <br><input type="reset" value="Réinitialiser">
+        <input type="button" value="Vérifier" onclick="affVerifButton()" id="verifButton">
+    </fieldset>
 
     <footer id="bandeau">
         <div class="row container text-align-center mx-auto">
