@@ -291,7 +291,7 @@ img.logo {
   top: 0;
 }
 .fullscreen-background {
-  overflow-y: auto;
+  /* overflow-y: auto; */
   position: fixed;
   top: 0;
   right: 0;
