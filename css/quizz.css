@@ -24,7 +24,6 @@ fieldset {
   width: 80%;
   max-width: max-content;
   min-width: 250px;
-  /* max-width: 500px; */
 }
 
 label {
@@ -70,12 +69,28 @@ input {
 } */
 
 /* mobile screen */
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   fieldset {
     top: 50%;
     transform: translate(-50%, -50%);
   }
   #legoImage {
       max-height: 352px;
+  }
+}
+@media ((max-width: 800px) and (min-width: 600px)) {
+  fieldset {
+    top: 20%;
+    transform: translate(-50%, -25%);
+  }
+  #legoImage {
+      max-height: 352px;
+  }
+}
+@media ((max-height: 800px) and (min-width: 800px)) {
+  fieldset {
+    scale: 0.85;
+    top: 20% !important;
+    left: calc(50% * 0.85) !important;
   }
 }

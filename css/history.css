@@ -21,6 +21,12 @@ body {
     /* display: none; */
   }
 }
+@media screen and ((max-height: 775px) and (min-height: 651px) and (min-width: 900px)) {
+  #book {
+    top: 40% !important;
+    transform: translate(-50%, -45%) !important;
+  }
+}
 
 #book {
   position: absolute;
