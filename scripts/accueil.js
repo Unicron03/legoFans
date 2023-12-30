@@ -1,9 +1,15 @@
 var imageDefilante = 0;
 
-var countDownDate = new Date("Dec 25, 2023 00:00:00").getTime();
 var x = setInterval(function(){
-    var maintenant = new Date().getTime();
-    var distance = countDownDate - maintenant;
+    var maintenant = new Date();
+    var annee = maintenant.getFullYear();
+    var countDownDate = new Date("Dec 25, " + annee + " 00:00:00").getTime();
+    if (maintenant.getTime() > countDownDate) {
+        annee = annee + 1;
+        countDownDate = new Date("Dec 25, " + annee + " 00:00:00").getTime();
+    }
+
+    var distance = countDownDate - maintenant.getTime();
 
     var jours = Math.floor(distance / (1000*60*60*24));
     var heures = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
