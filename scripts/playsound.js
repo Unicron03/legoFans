@@ -4,16 +4,7 @@ var audioPlayerStarWars = document.getElementById("audioPlayerStarWars");
 var playButtonMarvel = document.getElementById("playButtonMarvel");
 var audioPlayerMarvel = document.getElementById("audioPlayerMarvel");
 
-audioPlayerStarWars.addEventListener('loadedmetadata', function() {
-    console.log(audioPlayerStarWars.duration);
-});
-
-audioPlayerMarvel.addEventListener('loadedmetadata', function() {
-    console.log(audioPlayerMarvel.duration);
-});
-
-function playRandomPosition(audioPlayer) {
-    var duration = audioPlayer.duration;
+function playRandomPosition(audioPlayer, duration) {
     var randomPosition = Math.random() * duration;
 
     audioPlayer.currentTime = randomPosition;
@@ -22,7 +13,7 @@ function playRandomPosition(audioPlayer) {
 
 playButtonStarWars.addEventListener("click", function () {
     if (audioPlayerStarWars.paused) {
-        playRandomPosition(audioPlayerStarWars);
+        playRandomPosition(audioPlayerStarWars, 666);
         audioPlayerMarvel.pause();
     } else {
         audioPlayerStarWars.pause();
@@ -31,7 +22,7 @@ playButtonStarWars.addEventListener("click", function () {
 
 playButtonMarvel.addEventListener("click", function () {
     if (audioPlayerMarvel.paused) {
-        playRandomPosition(audioPlayerMarvel);
+        playRandomPosition(audioPlayerMarvel, 1719);
         audioPlayerStarWars.pause();
     } else {
         audioPlayerMarvel.pause();
