@@ -8,17 +8,7 @@ function playRandomPosition(audioPlayer, duration) {
     var randomPosition = Math.random() * duration;
 
     audioPlayer.currentTime = randomPosition;
-    var playPromise = audioPlayer.play();
-
-    if (playPromise !== undefined) {
-        playPromise.then(_ => {
-            // La lecture a commencé !
-        })
-        .catch(error => {
-            // La lecture a été empêchée
-            console.log(error);
-        });
-    }
+    audioPlayer.play();
 }
 
 playButtonStarWars.addEventListener("click", function () {
