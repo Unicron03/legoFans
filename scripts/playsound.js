@@ -4,6 +4,14 @@ var audioPlayerStarWars = document.getElementById("audioPlayerStarWars");
 var playButtonMarvel = document.getElementById("playButtonMarvel");
 var audioPlayerMarvel = document.getElementById("audioPlayerMarvel");
 
+audioPlayerStarWars.addEventListener('loadedmetadata', function() {
+    console.log(audioPlayerStarWars.duration);
+});
+
+audioPlayerMarvel.addEventListener('loadedmetadata', function() {
+    console.log(audioPlayerMarvel.duration);
+});
+
 function playRandomPosition(audioPlayer) {
     var duration = audioPlayer.duration;
     var randomPosition = Math.random() * duration;
