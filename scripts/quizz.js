@@ -54,3 +54,7 @@ function affVerifButton() {
         alert("Vous avez donné " + goodAnswer + " bonnes réponses exactes ! Score : " + points + "/10")
     }
 }
+
+function resetEnter() {
+    document.getElementById('userAnswer').value = 0;
+}

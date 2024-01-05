@@ -54,12 +54,12 @@
 
         <!-- Zone pour entrer la réponse -->
         <label for="userAnswer">Nombre de pièces :</label>
-        <input type="number" id="userAnswer" name="userAnswer">
+        <input type="number" id="userAnswer" name="userAnswer" value="0">
 
         <!-- Boutons -->
         <input type="button" value="Image suivante" onclick="nextImage()" id="imgButton">
 
-        <br><input type="reset" value="Réinitialiser">
+        <br><input type="reset" value="Réinitialiser" onclick="resetEnter()">
         <input type="button" value="Vérifier" onclick="affVerifButton()" id="verifButton">
     </fieldset>
 
