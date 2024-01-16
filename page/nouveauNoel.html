@@ -27,6 +27,26 @@
             <a href="javascript:void(0);" onclick="ouvrirDialog()" class="theme" id="Quiz"><strong>Le Quiz</strong></a>
     </section>
 
+    <dialog id="quizDialog">
+        <table>
+            <tr>
+              <th>Quizz1</th>
+              <th>Quizz2</th>
+            </tr>
+            <tr>
+              <td><img src="../assets/img/bg/review_quizz1.png" title="Quizz sans possibilité ! Niveau : difficile" class="reviewDialog"/></td>
+              <td><img src="../assets/img/bg/review_quizz2.png" title="Quizz avec 3 possibilités ! Niveau : normal" class="reviewDialog"/></td>
+            </tr>
+            <tr>
+                <td><a href="quizz.html">Aller au Quizz1</a></td>
+                <td><a href="quizz2.html">Aller au Quizz2</a></td>
+            </tr>
+        </table>
+        <form method="dialog">
+            <button onclick="fermerDialog()" style="cursor: pointer;">Fermer</button>
+        </form>
+    </dialog>
+
     <section class="categorie" id="Nouveautées">
         <h3 id="h31">Nouveautées</h3>
         <div class="photosLego">
